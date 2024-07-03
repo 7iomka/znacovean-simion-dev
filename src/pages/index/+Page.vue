@@ -9,8 +9,8 @@
 </template>
 
 <script lang="ts">
-  import Counter from "../../components/Counter.vue";
+import Counter from '@/shared/ui/counter/Counter.vue';
 
-  const components = { Counter };
-  export default { components };
+const components = { Counter };
+export default { components };
 </script>

@@ -1,36 +1,22 @@
 <template>
   <div class="layout">
     <Sidebar>
-      <Logo />
       <Link href="/"> Welcome </Link>
       <Link href="/todo"> Todo </Link>
       <Link href="/star-wars"> Data Fetching </Link>
     </Sidebar>
-    <Content><slot /></Content>
+    <PageContainer><slot /></PageContainer>
   </div>
 </template>
 
 <script lang="ts" setup>
-  import Content from "../components/Content.vue";
-  import Link from "../components/Link.vue";
-  import Logo from "../components/Logo.vue";
-  import Sidebar from "../components/Sidebar.vue";
+  import Link from '@/shared/ui/link/Link.vue';
+  import PageContainer from '@/shared/ui/page-container/PageContainer.vue';
+  import Sidebar from '@/shared/ui/sidebar/Sidebar.vue';
 </script>
 
 <style>
-  /* see https://stackoverflow.com/questions/55206901/how-to-import-css-files-in-vue-3-child-components */
-  @import "./tailwind.css";
-
-  body {
-    margin: 0;
-    font-family: sans-serif;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  a {
-    text-decoration: none;
-  }
+  @import '../../shared/styles/common.css';
 </style>
 
 <style scoped>

@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 bg-background/80 backdrop-blur-lg border-b border-border z-10 py-3 lg:py-4"
+    class="sticky top-0 bg-background/80 backdrop-blur-lg border-b border-border z-10 py-3 h-[--header-sticky-height]"
   >
     <div class="container">
       <div class="flex items-center justify-between gap-4 sm:gap-5">

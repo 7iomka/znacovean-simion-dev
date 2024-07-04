@@ -4,7 +4,7 @@
       v-for="item in items"
       :class="
         cn(
-          'flex items-center justify-center shrink-0 w-9 h-9 transition-colors text-muted-foreground hover:text-foreground',
+          'flex items-center justify-center shrink-0 w-8 h-8 xsl:w-9 xsl:h-9 transition-colors text-muted-foreground hover:text-foreground',
           props.classNames?.item,
         )
       "
@@ -16,7 +16,7 @@
       rel="noopener noreferrer"
     >
       <span
-        :class="cn(item.icon, props.classNames?.icon, 'w-5 h-5 shrink-0')"
+        :class="cn(item.icon, props.classNames?.icon, 'w-5 h-5 sm:w-6 sm:h-6')"
       />
     </a>
   </div>

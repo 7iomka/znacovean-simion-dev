@@ -1,18 +1,13 @@
 <template>
   <div class="layout">
-    <Sidebar>
-      <Link href="/"> Welcome </Link>
-      <Link href="/todo"> Todo </Link>
-      <Link href="/star-wars"> Data Fetching </Link>
-    </Sidebar>
+    <Header />
     <PageContainer><slot /></PageContainer>
   </div>
 </template>
 
 <script lang="ts" setup>
-  import Link from '@/shared/ui/link/Link.vue';
   import PageContainer from '@/shared/ui/page-container/PageContainer.vue';
-  import Sidebar from '@/shared/ui/sidebar/Sidebar.vue';
+  import Header from '@/widgets/header/Header.vue';
 </script>
 
 <style>
@@ -22,8 +17,8 @@
 <style scoped>
   .layout {
     display: flex;
-    max-width: 900px;
-    margin: auto;
+    flex-direction: column;
+    min-height: 100vh;
   }
   .content {
     padding: 20px;

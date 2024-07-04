@@ -5,7 +5,7 @@
   "tsConfigPath": "./tsconfig.json",
   "tailwind": {
     "config": "tailwind.config.ts",
-    "css": "src/app/styles/common.css",
+    "css": "src/shared/styles/common.css",
     "baseColor": "slate",
     "cssVariables": true
   },

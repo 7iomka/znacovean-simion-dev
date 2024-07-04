@@ -1,8 +1,8 @@
 const baseConfig = {
   brandName: 'Znacovean Simion',
-  linkedinURL: 'https://www.linkedin.com/in/simion-znacovean-26021179/',
-  vkURL: 'https://vk.com/exclusi0n',
-  telegramURL: 'https://t.me/exclusi0n',
+  linkedinUrl: 'https://www.linkedin.com/in/simion-znacovean-26021179/',
+  telegramUrl: 'https://t.me/exclusi0n',
+  githubUrl: 'https://github.com/7iomka',
   phone: '+37367185211',
   email: 'znacovean.simion.dev@gmail.com',
   appBaseURL: import.meta.env?.BASE_URL,

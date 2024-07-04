@@ -45,19 +45,19 @@
   const props = withDefaults(defineProps<SocialsProps>(), {
     items: () => [
       {
-        name: 'VK',
-        url: appConfig.vkURL,
-        icon: 'icon-[uil--vk]',
-      },
-      {
         name: 'Telegram',
-        url: appConfig.telegramURL,
+        url: appConfig.telegramUrl,
         icon: 'icon-[uil--telegram]',
       },
       {
         name: 'LinkedIn',
-        url: appConfig.linkedinURL,
+        url: appConfig.linkedinUrl,
         icon: 'icon-[uil--linkedin]',
+      },
+      {
+        name: 'Github',
+        url: appConfig.githubUrl,
+        icon: 'icon-[uil--github]',
       },
     ],
   });

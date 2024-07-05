@@ -32,12 +32,15 @@
   position: sticky;
   top: calc(var(--header-sticky-height) + 1rem);
   z-index: 1;
-  margin-bottom: 2rem;
   font-size: var(--font-size-base);
 
   @screen lg {
     font-size: var(--font-size-lg);
   }
+}
+
+.timeline-group:not(:last-child) .timeline-group__label {
+  margin-bottom: calc(var(--timeline-item-space-between) / 2);
 }
 
 .timeline-group__line {
@@ -46,14 +49,15 @@
   min-height: 1rem;
   position: absolute;
   top: 0;
-  bottom:0;
+  bottom: 0;
   left: 0;
   display: flex;
   justify-content: center;
 
   &::before {
     content: "";
-    border-left: var(--timeline-group-line-size) var(--timeline-group-line-type) var(--timeline-group-line-color);
+    border-left: var(--timeline-group-line-size) var(--timeline-group-line-type)
+      var(--timeline-group-line-color);
     height: 100%;
     inset: 0;
   }
@@ -80,14 +84,14 @@
 }
 
 .timeline-item__line {
-  border-left: var(--timeline-item-line-size) var(--timeline-item-line-type) var(--timeline-item-line-color);
+  border-left: var(--timeline-item-line-size) var(--timeline-item-line-type)
+    var(--timeline-item-line-color);
   grid-row: 2;
   grid-column: 1;
   justify-self: center;
   height: 100%;
   min-height: 1rem;
 }
-
 
 /* .timeline-item:last-child .timeline-item__line {
   display: none;
@@ -114,17 +118,24 @@
   padding-bottom: var(--timeline-item-space-between);
 }
 
-
 .timeline-group:last-child .timeline-item:last-child .timeline-item__content {
   padding-bottom: 0;
 }
 
-.timeline-item:last-child .timeline-item__content::after {
+.timeline-group:not(:last-child)
+  .timeline-item:last-child
+  .timeline-item__content::after {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  border-top: var(--timeline-item-line-size) var(--timeline-item-line-type) var(--timeline-item-line-color);
-  transform: translateY(calc(var(--timeline-item-space-between) / -2 + var(--timeline-item-line-size) / 2));
+  border-top: var(--timeline-item-line-size) var(--timeline-item-line-type)
+    var(--timeline-item-line-color);
+  transform: translateY(
+    calc(
+      var(--timeline-item-space-between) / -2 + var(--timeline-item-line-size) /
+        2
+    )
+  );
 }

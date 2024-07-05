@@ -10,4 +10,5 @@ export default {
   Head,
   title: appConfig.brandName,
   extends: vikeVue,
+  // bodyAttributes: { 'data-theme': 'dark' }
 } satisfies Config;

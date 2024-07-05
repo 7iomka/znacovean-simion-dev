@@ -498,6 +498,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/logos@npm:^1.1.43":
+  version: 1.1.43
+  resolution: "@iconify-json/logos@npm:1.1.43"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/485447a1bfee257db13e3bc2354fa89937949b8035164cf1db58775a6437aa09eacaa9928a4592027b3b6af43617debb427e314ae833a88c99d8d481b62a2949
+  languageName: node
+  linkType: hard
+
 "@iconify-json/uil@npm:^1.1.8":
   version: 1.1.8
   resolution: "@iconify-json/uil@npm:1.1.8"
@@ -1492,6 +1501,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"effector-vue@npm:^23.0.0":
+  version: 23.0.0
+  resolution: "effector-vue@npm:23.0.0"
+  peerDependencies:
+    "@vue/reactivity": ^3.0.2
+    "@vue/runtime-core": ^3.0.2
+    effector: ^23.0.0
+    vue: "*"
+  checksum: 10c0/b4a13e378781719a4497a354bd119965dfda2dcaeb9d0705e6b3370d523707193a71d23fc96f69ef83b1c5eddbb9240ab41756701b8f5fc8c8d3e9152450ea93
+  languageName: node
+  linkType: hard
+
+"effector@npm:^23.2.2":
+  version: 23.2.2
+  resolution: "effector@npm:23.2.2"
+  checksum: 10c0/455878a7a76806ddac2ad2bf76ee62084794a933ad1fece2990dd3de60cad7162b57e069fdea670c57f1f2f7ccbd6e480691f3eb8abe2fa97d8f253a64aa4a49
+  languageName: node
+  linkType: hard
+
 "electron-to-chromium@npm:^1.4.796":
   version: 1.4.816
   resolution: "electron-to-chromium@npm:1.4.816"
@@ -2385,6 +2413,7 @@ __metadata:
   dependencies:
     "@auth/core": "npm:^0.34.1"
     "@csstools/postcss-is-pseudo-class": "npm:^4.0.8"
+    "@iconify-json/logos": "npm:^1.1.43"
     "@iconify-json/uil": "npm:^1.1.8"
     "@iconify/tailwind": "npm:^1.1.1"
     "@radix-icons/vue": "npm:^1.0.0"
@@ -2399,7 +2428,10 @@ __metadata:
     chokidar: "npm:^3.6.0"
     clsx: "npm:^2.1.1"
     cross-fetch: "npm:^4.0.0"
+    effector: "npm:^23.2.2"
+    effector-vue: "npm:^23.0.0"
     eslint-config-prettier: "npm:^9.1.0"
+    patronum: "npm:^2.2.0"
     postcss: "npm:^8.4.39"
     postcss-inset: "npm:^1.0.0"
     postcss-pxtorem: "npm:^6.1.0"
@@ -2578,6 +2610,15 @@ __metadata:
     lru-cache: "npm:^10.2.0"
     minipass: "npm:^5.0.0 || ^6.0.2 || ^7.0.0"
   checksum: 10c0/32a13711a2a505616ae1cc1b5076801e453e7aae6ac40ab55b388bb91b9d0547a52f5aaceff710ea400205f18691120d4431e520afbe4266b836fadede15872d
+  languageName: node
+  linkType: hard
+
+"patronum@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "patronum@npm:2.2.0"
+  peerDependencies:
+    effector: ^23
+  checksum: 10c0/ff75232bbb4b11617ac94d25f4c766f0744683c01279cc32cc618dad93474b030fc81e506c65104736806e297190934ceb83a118b56ff6292f03a5700ea78f2e
   languageName: node
   linkType: hard
 

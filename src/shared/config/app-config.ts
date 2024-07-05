@@ -1,5 +1,7 @@
 const baseConfig = {
   brandName: 'Znacovean Simion',
+  initials: 'Znacovean Simion',
+  address: 'Moldova, Chisinau',
   linkedinUrl: 'https://www.linkedin.com/in/simion-znacovean-26021179/',
   telegramUrl: 'https://t.me/exclusi0n',
   githubUrl: 'https://github.com/7iomka',

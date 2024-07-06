@@ -1,8 +1,9 @@
 .timeline {
   --timeline-group-line-size: 2px;
   --timeline-group-line-type: solid;
-  --timeline-group-line-color: hsl(var(--border));
-  --timeline-group-label-background: hsl(var(--border));
+  --timeline-group-line-color: hsl(var(--secondary));
+  --timeline-group-label-background: hsl(var(--secondary));
+  --timeline-group-label-color: hsl(var(--secondary-foreground));
   --timeline-group-label-width: 60px;
   --timeline-item-line-size: 1px;
   --timeline-item-line-type: dashed;
@@ -28,6 +29,7 @@
   text-align: center;
   padding: 12px 8px;
   background: var(--timeline-group-label-background);
+  color: var(--timeline-group-label-color);
   border-radius: var(--radius);
   position: sticky;
   top: calc(var(--header-sticky-height) + 1rem);

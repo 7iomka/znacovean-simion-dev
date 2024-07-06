@@ -1,9 +1,9 @@
 <template>
-  <section id="intro" class="intro">
+  <section id="intro" class="py-10 bg-white/[0.03]">
     <div class="container">
       <div class="flex flex-wrap sm:flex-nowrap items-start gap-x-7 gap-y-4">
-        <div class="sticky top-[calc(var(--header-sticky-height)+1rem)]">
-          <div class="relative w-[100px] lg:w-40 rounded-md">
+        <div class="sm:sticky sm:top-[calc(var(--header-sticky-height)+1rem)]">
+          <div class="relative w-[100px] lg:w-60 rounded-md">
             <img
               class="rounded-md"
               src="/static/images/content/my-photo.jpg"
@@ -19,9 +19,9 @@
             <div class="flex flex-col gap-2">
               <!--begin::Name-->
               <div class="flex items-center">
-                <div class="text-xl xl:text-2xl">
-                  < <span class="font-bold">{{ appConfig.initials }}</span> >
-                </div>
+                <h2 class="text-3xl lg:text-4xl font-normal">
+                  {{ appConfig.initials }}
+                </h2>
               </div>
               <!--end::Name-->
 
@@ -50,53 +50,49 @@
           <!--end::Title-->
 
           <!--begin::Stats-->
-          <div class="flex flex-wrap justify-between items-center">
-            <div class="flex flex-col flex-grow-1 pe-8">
-              <!--begin::Stats-->
-              <div class="flex flex-wrap">
-                <!--begin::Stat-->
-                <div
-                  class="border border-border border-dashed rounded min-w-[125px] py-3 px-4 mr-6 mb-3"
-                >
-                  <div class="flex items-center">
-                    <div class="text-xl xl:text-2xl font-bold">9+ years</div>
-                  </div>
-                  <div class="text-sm text-muted-foreground">
-                    Total development experience
-                  </div>
+          <div class="flex flex-col flex-grow-1">
+            <div class="flex flex-wrap gap-3">
+              <!--begin::Stat-->
+              <div
+                class="border border-border border-dashed rounded min-w-[125px] py-3 px-4"
+              >
+                <div class="flex items-center">
+                  <div class="text-xl xl:text-2xl font-bold">9+ years</div>
                 </div>
-                <!--end::Stat-->
-                <!--begin::Stat-->
-                <div
-                  class="border border-border border-dashed rounded min-w-[125px] py-3 px-4 mr-6 mb-3"
-                >
-                  <div class="flex items-center">
-                    <div class="text-xl xl:text-2xl font-bold">7+ years</div>
-                  </div>
-                  <div class="text-sm text-muted-foreground">
-                    Commercial Frontend experience
-                  </div>
+                <div class="text-sm text-muted-foreground">
+                  Total development experience
                 </div>
-                <!--end::Stat-->
-                <!--begin::Stat-->
-                <div
-                  class="border border-border border-dashed rounded min-w-[125px] py-3 px-4 mr-6 mb-3"
-                >
-                  <div class="flex items-center">
-                    <div class="text-xl xl:text-2xl font-bold">100+</div>
-                  </div>
-                  <div class="text-sm text-muted-foreground">Projects</div>
-                </div>
-                <!--end::Stat-->
               </div>
-              <!--end::Stats-->
+              <!--end::Stat-->
+              <!--begin::Stat-->
+              <div
+                class="border border-border border-dashed rounded min-w-[125px] py-3 px-4"
+              >
+                <div class="flex items-center">
+                  <div class="text-xl xl:text-2xl font-bold">7+ years</div>
+                </div>
+                <div class="text-sm text-muted-foreground">
+                  Commercial Frontend experience
+                </div>
+              </div>
+              <!--end::Stat-->
+              <!--begin::Stat-->
+              <div
+                class="border border-border border-dashed rounded min-w-[125px] grow-[0.35] py-3 px-4"
+              >
+                <div class="flex items-center">
+                  <div class="text-xl xl:text-2xl font-bold">100+</div>
+                </div>
+                <div class="text-sm text-muted-foreground">Projects</div>
+              </div>
+              <!--end::Stat-->
             </div>
           </div>
           <!--end::Stats-->
 
           <!--begin::Description-->
           <div
-            class="prose prose-invert prose-ul:list-disc prose-ul:pl-[0.9em] text-muted-foreground max-w-full"
+            class="prose prose-invert prose-ul:list-disc prose-ul:pl-[0.9em] max-w-full inline leading-normal break-words min-w-0 [word-break:break-word]"
           >
             <p>
               I am a frontend enthusiast who enjoys working with web
@@ -139,9 +135,3 @@
 <script setup lang="ts">
   import { appConfig } from '@/shared/config/app-config';
 </script>
-
-<style scoped>
-  .intro {
-    padding: 40px 0;
-  }
-</style>

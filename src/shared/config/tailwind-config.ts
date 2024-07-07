@@ -6,6 +6,8 @@ import aspectRatioPlugin from '@tailwindcss/aspect-ratio';
 import typographyPlugin from '@tailwindcss/typography';
 import { round } from './theme/lib';
 
+import skillIconSetExtIcons from './icon-sets/skill-icons-ext/icons.json';
+
 import {
   customTypography,
   customUtilities,
@@ -93,6 +95,9 @@ export const tailwindConfig: Partial<Config> = {
     addDynamicIconSelectors({
       prefix: 'icon',
       overrideOnly: true,
+      iconSets: {
+        'skill-icons-ext': skillIconSetExtIcons,
+      },
     }),
 
     // Adding custom utilities here

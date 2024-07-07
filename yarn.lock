@@ -507,6 +507,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/skill-icons@npm:^1.1.8":
+  version: 1.1.8
+  resolution: "@iconify-json/skill-icons@npm:1.1.8"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/517dc50d6b989c1348a07af58082562e5e299ffe298b0b835bf879ef59c5af8b0e26a40a22233aa29c18124568a0a63b323f7efbe70ad673ad3d7c464b325569
+  languageName: node
+  linkType: hard
+
 "@iconify-json/uil@npm:^1.1.8":
   version: 1.1.8
   resolution: "@iconify-json/uil@npm:1.1.8"
@@ -2414,6 +2423,7 @@ __metadata:
     "@auth/core": "npm:^0.34.1"
     "@csstools/postcss-is-pseudo-class": "npm:^4.0.8"
     "@iconify-json/logos": "npm:^1.1.43"
+    "@iconify-json/skill-icons": "npm:^1.1.8"
     "@iconify-json/uil": "npm:^1.1.8"
     "@iconify/tailwind": "npm:^1.1.1"
     "@radix-icons/vue": "npm:^1.0.0"

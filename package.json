@@ -15,6 +15,7 @@
     "@auth/core": "^0.34.1",
     "@csstools/postcss-is-pseudo-class": "^4.0.8",
     "@iconify-json/logos": "^1.1.43",
+    "@iconify-json/skill-icons": "^1.1.8",
     "@iconify-json/uil": "^1.1.8",
     "@iconify/tailwind": "^1.1.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",

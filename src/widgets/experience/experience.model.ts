@@ -1,7 +1,6 @@
 import { createStore } from 'effector';
 import { ExperienceItem } from './experience.types';
 import { groupByYear } from './experience.lib';
-import { debug } from 'patronum';
 
 const experienceItems = [
   {
@@ -84,9 +83,5 @@ const experienceItems = [
 
 const $items = createStore(experienceItems);
 const $groupedItems = $items.map((items) => groupByYear(items, 'desc'));
-
-debug({
-  $groupedItems,
-});
 
 export const $$experience = { $groupedItems };

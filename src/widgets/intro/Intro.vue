@@ -19,7 +19,7 @@
             <div class="flex flex-col gap-2">
               <!--begin::Name-->
               <div class="flex items-center">
-                <h2 class="text-3xl lg:text-4xl font-normal">
+                <h2 class="text-3xl lg:text-4xl">
                   {{ appConfig.initials }}
                 </h2>
               </div>

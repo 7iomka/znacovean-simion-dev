@@ -1,7 +1,7 @@
 <template>
   <div id="experience-timeline" class="py-10 border border-border">
     <div class="container">
-      <h2 class="text-3xl lg:text-4xl font-normal">Experience</h2>
+      <h2 class="text-3xl lg:text-4xl">Experience</h2>
       <Timeline class="mt-8 lg:mt-10">
         <template v-for="group in groupedExperience" :key="group.year">
           <TimelineGroup :label="`${group.year}`">

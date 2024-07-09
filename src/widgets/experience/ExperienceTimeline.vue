@@ -57,6 +57,7 @@
 
 <style scoped>
   .experience-timeline-item {
+    position: relative;
   }
 
   .experience-timeline-item__header {

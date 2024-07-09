@@ -8,8 +8,8 @@
 </template>
 
 <script lang="ts" setup>
-import { useData } from "vike-vue/useData";
-import type { Data } from "./+data.js";
+  import { useData } from 'vike-vue/useData';
+  import type { Data } from './+data.js';
 
-const movie = useData<Data>();
+  const movie = useData<Data>();
 </script>

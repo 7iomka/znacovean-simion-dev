@@ -1,6 +1,6 @@
 <script lang="ts" setup>
   import { cn } from '@/shared/lib/cn';
-  import type { HTMLAttributes } from 'vue';
+  import type { HTMLAttributes, VNode } from 'vue';
 
   const props = defineProps<{
     class?: HTMLAttributes['class'];
@@ -8,8 +8,8 @@
   }>();
 
   defineSlots<{
-    default: () => any;
-    label: () => any;
+    default(): VNode[];
+    label(): VNode[];
   }>();
 </script>
 

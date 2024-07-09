@@ -30,9 +30,12 @@ export const shadow = Object.keys(shadowConfig).reduce(
   (result, key) => ({
     ...result,
     [key]:
-      typeof shadowConfig[key] === 'string'
-        ? shadowConfig[key].replace(/(\d+)px/g, (match, pxValue) => rem(parseInt(pxValue, 10)))
-        : typeof shadowConfig[key],
+      typeof shadowConfig[key as keyof typeof shadowConfig] === 'string'
+        ? shadowConfig[key as keyof typeof shadowConfig].replace(
+            /(\d+)px/g,
+            (match, pxValue) => rem(parseInt(pxValue, 10)),
+          )
+        : typeof shadowConfig[key as keyof typeof shadowConfig] === 'object',
   }),
   {} as Record<keyof typeof shadowConfig, string>,
 );

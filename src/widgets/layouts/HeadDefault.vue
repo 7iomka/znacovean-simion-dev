@@ -70,7 +70,11 @@
     }
   </style>
 
-  <component is="script" src="/static/scripts/modernizr-bundle.min.js" defer />
+  <component
+    :is="'script'"
+    src="/static/scripts/modernizr-bundle.min.js"
+    defer
+  />
 </template>
 
 <script setup lang="ts"></script>

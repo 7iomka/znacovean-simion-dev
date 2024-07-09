@@ -1,12 +1,15 @@
 <template>
-  <div class="layout">
-    <Header />
-    <PageContainer><slot /></PageContainer>
-  </div>
+  <TooltipProvider :delay-duration="200" :skip-delay-duration="100">
+    <div class="layout">
+      <Header />
+      <PageContainer><slot /></PageContainer>
+    </div>
+  </TooltipProvider>
 </template>
 
 <script lang="ts" setup>
   import PageContainer from '@/shared/ui/page-container/PageContainer.vue';
+  import { TooltipProvider } from '@/shared/ui/tooltip';
   import Header from '@/widgets/header/Header.vue';
 </script>
 

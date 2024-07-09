@@ -32,4 +32,8 @@ const hideNativeScrollbar = () => ({
   },
 });
 
-export const customUtilities = [scrollbarCompensation, visuallyHidden, hideNativeScrollbar];
+export const customUtilities = [
+  scrollbarCompensation,
+  visuallyHidden,
+  hideNativeScrollbar,
+];

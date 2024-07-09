@@ -25,6 +25,11 @@ export const rem = createConverter('rem');
 // them same as rem, only units is em (used in breakpoints)
 export const em = createConverter('em');
 
-export const getBreakpointValue = (value: string | number, breakpoints: object) => {
-  return value in breakpoints ? (breakpoints as any)[value] : em(value);
+export const getBreakpointValue = (
+  value: string | number,
+  breakpoints: object,
+) => {
+  return value in breakpoints
+    ? breakpoints[value as keyof typeof breakpoints]
+    : em(value);
 };

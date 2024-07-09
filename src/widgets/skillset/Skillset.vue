@@ -4,7 +4,8 @@
       <h2 class="text-3xl lg:text-4xl">Skillset</h2>
       <div class="mt-8 lg:mt-10 pb-5">
         <div
-          class="grid items-start justify-center gap-8 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
+          class="grid items-start justify-center gap-8 grid-cols-1
+            lg:grid-cols-2 xl:grid-cols-3"
         >
           <SkillGroup
             v-for="{ name, iconClass, skills } in skillGroups"

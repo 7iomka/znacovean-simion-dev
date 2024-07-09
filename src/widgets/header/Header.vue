@@ -1,15 +1,15 @@
 <template>
   <header
-    class="sticky top-0 bg-background/80 backdrop-blur-lg border-b border-border z-10 py-3 h-[--header-sticky-height]"
+    class="sticky top-0 bg-background/80 backdrop-blur-lg border-b border-border
+      z-10 py-3 h-[--header-sticky-height]"
   >
     <div class="container">
       <div class="flex items-center justify-between gap-4 sm:gap-5">
         <div class="flex items-center space-x-4">
           <span
-            :class="[
-              'inline-flex items-center justify-center font-normal text-foreground',
-              'select-none shrink-0 bg-secondary overflow-hidden h-10 w-10 text-xs rounded-full',
-            ]"
+            class="inline-flex items-center justify-center font-normal
+              text-foreground select-none shrink-0 bg-secondary overflow-hidden
+              h-10 w-10 text-xs rounded-full"
           >
             <img
               role="img"

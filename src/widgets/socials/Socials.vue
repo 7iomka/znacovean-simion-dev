@@ -2,13 +2,14 @@
   <div :class="cn('flex items-center', props.class, props.classNames?.root)">
     <a
       v-for="item in items"
+      :key="item.name"
       :class="
         cn(
-          'flex items-center justify-center shrink-0 w-8 h-8 xsl:w-9 xsl:h-9 transition-colors text-muted-foreground hover:text-foreground',
+          `flex items-center justify-center shrink-0 w-8 h-8 xsl:w-9 xsl:h-9
+          transition-colors text-muted-foreground hover:text-foreground`,
           props.classNames?.item,
         )
       "
-      :key="item.name"
       :aria-label="item.name"
       :title="item.name"
       :href="item.url"

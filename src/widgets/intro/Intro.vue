@@ -54,7 +54,8 @@
             <div class="flex flex-wrap gap-3">
               <!--begin::Stat-->
               <div
-                class="border border-border border-dashed rounded min-w-[125px] py-3 px-4"
+                class="border border-border border-dashed rounded min-w-[125px]
+                  py-3 px-4"
               >
                 <div class="flex items-center">
                   <div class="text-xl xl:text-2xl font-bold">9+ years</div>
@@ -66,7 +67,8 @@
               <!--end::Stat-->
               <!--begin::Stat-->
               <div
-                class="border border-border border-dashed rounded min-w-[125px] py-3 px-4"
+                class="border border-border border-dashed rounded min-w-[125px]
+                  py-3 px-4"
               >
                 <div class="flex items-center">
                   <div class="text-xl xl:text-2xl font-bold">7+ years</div>
@@ -78,7 +80,8 @@
               <!--end::Stat-->
               <!--begin::Stat-->
               <div
-                class="border border-border border-dashed rounded min-w-[125px] grow-[0.35] py-3 px-4"
+                class="border border-border border-dashed rounded min-w-[125px]
+                  grow-[0.35] py-3 px-4"
               >
                 <div class="flex items-center">
                   <div class="text-xl xl:text-2xl font-bold">100+</div>
@@ -92,7 +95,9 @@
 
           <!--begin::Description-->
           <div
-            class="prose prose-invert prose-ul:list-disc prose-ul:pl-[0.9em] max-w-full inline leading-normal break-words min-w-0 [word-break:break-word]"
+            class="prose prose-invert prose-ul:list-disc prose-ul:pl-[0.9em]
+              max-w-full inline leading-normal break-words min-w-0
+              [word-break:break-word]"
           >
             <p>
               I am a frontend enthusiast who enjoys working with web

@@ -1,14 +1,5 @@
 import { ExperienceItem, Technology } from './experience.types';
 
-export function formatDate(date: string | null): string {
-  if (!date) return 'Present';
-  const options: Intl.DateTimeFormatOptions = {
-    year: 'numeric',
-    month: 'short',
-  };
-  return new Date(date).toLocaleDateString('en', options);
-}
-
 interface GroupedExperience {
   [year: string]: ExperienceItem[];
 }

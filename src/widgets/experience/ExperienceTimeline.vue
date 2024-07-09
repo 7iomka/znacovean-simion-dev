@@ -48,8 +48,9 @@
 <script setup lang="ts">
   import { useUnit } from 'effector-vue/composition';
   import { $$experience } from './experience.model';
-  import { formatDate, technologyIconsMap } from './experience.lib';
+  import { technologyIconsMap } from './experience.lib';
   import { Timeline, TimelineGroup, TimelineItem } from '@/shared/ui/timeline';
+  import { formatDate } from '@/shared/lib/date';
 
   const groupedExperience = useUnit($$experience.$groupedItems);
 </script>

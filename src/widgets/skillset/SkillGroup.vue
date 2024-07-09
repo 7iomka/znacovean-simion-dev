@@ -16,11 +16,7 @@
         class="flex items-center gap-2 text-sm"
       >
         <span
-          :class="[
-            'icon-bg',
-            skillsetIconsMap[item]?.iconClass,
-            'text-[1.2em]',
-          ]"
+          :class="[skillsetIconsMap[item]?.iconClass, 'text-[1.2em]']"
         ></span>
         <span>{{ skillsetIconsMap[item]?.name }}</span>
       </div>

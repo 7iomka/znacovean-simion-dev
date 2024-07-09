@@ -8,6 +8,9 @@
   "endOfLine": "lf",
   "useTabs": false,
   "vueIndentScriptAndStyle": true,
+  "plugins": ["prettier-plugin-classnames"],
+  "customFunctions": ["cn", "cva", "clsx"],
+  "endingPosition": "absolute-with-indent",
   "overrides": [
     {
       "files": "*.{css,scss}",

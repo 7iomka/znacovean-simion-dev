@@ -1,6 +1,4 @@
-/* eslint-disable import/no-relative-packages */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-
+import deepmerge from 'deepmerge';
 import {
   colors,
   breakpoints,
@@ -95,34 +93,37 @@ export const breakpointVariables = () => {
 
 export const containerVariables = () => {
   const containerPaddingSetup = containerSetup.padding;
-  return {
-    // container-xxx
-    ...Object.keys(containerMaxWidths).reduce(
-      (prev, curr) => ({
-        ...prev,
-        [`--container-${curr}`]:
+  // container-xxx
+  const containerVars = Object.keys(containerMaxWidths).reduce(
+    (prev, curr) => ({
+      ...prev,
+      [`--container-${curr}`]:
+        containerMaxWidths[curr as keyof typeof containerMaxWidths],
+    }),
+    {},
+  );
+
+  // container max-width responsive variable
+  const containerMaxWidthVars = Object.keys(containerMaxWidths).reduce(
+    (acc: any, curr: any) => ({
+      ...acc,
+      [`@media ${largerThan(curr)}`]: {
+        '--container-max-width':
           containerMaxWidths[curr as keyof typeof containerMaxWidths],
-      }),
-      {},
-    ),
-    // container max-width responsive variable
-    ...Object.keys(breakpoints).reduce(
-      (acc: any, curr: any) => ({
-        ...acc,
-        [`@media ${largerThan(curr)}`]: {
-          '--container-max-width':
-            containerMaxWidths[curr as keyof typeof containerMaxWidths] ||
-            breakpoints[curr as keyof typeof breakpoints],
-        },
-      }),
-      {
-        '--container-max-width': containerMaxWidths.min,
+        // || breakpoints[curr as keyof typeof breakpoints],
       },
-    ),
-    // container padding responsive variable
-    ...Object.keys(containerPaddingSetup).reduce((acc: any, curr: any) => {
+    }),
+    {
+      '--container-max-width': containerMaxWidths.min,
+    },
+  );
+
+  // container padding responsive variable
+  const containerPaddingVars = Object.keys(containerPaddingSetup).reduce(
+    (acc: any, curr: any) => {
       const paddingValue =
         containerPaddingSetup[curr as keyof typeof containerPaddingSetup];
+
       if (curr === 'DEFAULT') {
         return {
           ...acc,
@@ -136,8 +137,15 @@ export const containerVariables = () => {
           '--container-padding': paddingValue,
         },
       };
-    }, {}),
-  };
+    },
+    {},
+  );
+
+  return deepmerge.all([
+    containerVars,
+    containerMaxWidthVars,
+    containerPaddingVars,
+  ]);
 };
 
 export const shadowVariables = () => {

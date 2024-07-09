@@ -1374,10 +1374,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"class-variance-authority@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "class-variance-authority@npm:0.7.0"
+  dependencies:
+    clsx: "npm:2.0.0"
+  checksum: 10c0/e11c57edf4bf50ef1c97bae41d68885afbaaedba26c48b7cc5dfb033390fed7012147e9532168d8c4f3497fce4dff15e20e6e60b8c9c9a4b0fe26b0e804513db
+  languageName: node
+  linkType: hard
+
 "clean-stack@npm:^2.0.0":
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
   checksum: 10c0/1f90262d5f6230a17e27d0c190b09d47ebe7efdd76a03b5a1127863f7b3c9aec4c3e6c8bb3a7bbf81d553d56a1fd35728f5a8ef4c63f867ac8d690109742a8c1
+  languageName: node
+  linkType: hard
+
+"clsx@npm:2.0.0":
+  version: 2.0.0
+  resolution: "clsx@npm:2.0.0"
+  checksum: 10c0/c09f43b3144a0b7826b6b11b6a111b2c7440831004eecc02d333533c5e58ef0aa5f2dce071d3b25fbb8c8ea97b45df96c74bcc1d51c8c2027eb981931107b0cd
   languageName: node
   linkType: hard
 
@@ -1479,6 +1495,13 @@ __metadata:
     supports-color:
       optional: true
   checksum: 10c0/082c375a2bdc4f4469c99f325ff458adad62a3fc2c482d59923c260cb08152f34e2659f72b3767db8bb2f21ca81a60a42d1019605a412132d7b9f59363a005cc
+  languageName: node
+  linkType: hard
+
+"deepmerge@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "deepmerge@npm:4.3.1"
+  checksum: 10c0/e53481aaf1aa2c4082b5342be6b6d8ad9dfe387bc92ce197a66dea08bd4265904a087e75e464f14d1347cf2ac8afe1e4c16b266e0561cc5df29382d3c5f80044
   languageName: node
   linkType: hard
 
@@ -2436,8 +2459,10 @@ __metadata:
     "@vue/server-renderer": "npm:^3.4.31"
     autoprefixer: "npm:^10.4.19"
     chokidar: "npm:^3.6.0"
+    class-variance-authority: "npm:^0.7.0"
     clsx: "npm:^2.1.1"
     cross-fetch: "npm:^4.0.0"
+    deepmerge: "npm:^4.3.1"
     effector: "npm:^23.2.2"
     effector-vue: "npm:^23.0.0"
     eslint-config-prettier: "npm:^9.1.0"
@@ -2454,7 +2479,7 @@ __metadata:
     typescript: "npm:5.5.2"
     unplugin-vue-markdown: "npm:^0.26.2"
     vike: "npm:0.4.178-commit-fae90a1"
-    vike-vue: "npm:^0.7.6"
+    vike-vue: "npm:0.7.6-commit-40caee7"
     vite: "npm:^5.3.2"
     vue: "npm:^3.4.31"
   languageName: unknown
@@ -3478,13 +3503,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vike-vue@npm:^0.7.6":
-  version: 0.7.6
-  resolution: "vike-vue@npm:0.7.6"
+"vike-vue@npm:0.7.6-commit-40caee7":
+  version: 0.7.6-commit-40caee7
+  resolution: "vike-vue@npm:0.7.6-commit-40caee7"
   peerDependencies:
     vike: ">=0.4.172"
     vue: ">=3.0.0"
-  checksum: 10c0/8659196dc19ab3eb4f04c4f02a765d956658d4fe6795c05a351726269ee617ddb140ee4378b1a8f6b7c7336f799306dff9c0aa72958b0b0262eaff200127db8a
+  checksum: 10c0/7468a88d10b8d0fe683754a44b44b63e36f40e9969e16142cc1464759dfa34ad111259a420e812c3d027346742f6865575778d12b99cc94109a0d2dd0f9cc6b4
   languageName: node
   linkType: hard
 

@@ -38,7 +38,7 @@
         :class="
           cn(
             `relative z-50 my-8 grid w-full max-w-lg gap-4 border border-border
-            bg-background p-6 shadow-lg outline-none zoom-out-95
+            bg-background py-6 px-4 sm:p-6 shadow-lg outline-none zoom-out-95
             [animation-duration:500ms] data-[state=closed]:animate-out
             data-[state=open]:animate-in data-[state=open]:zoom-in-90 md:w-full
             sm:rounded-lg`,

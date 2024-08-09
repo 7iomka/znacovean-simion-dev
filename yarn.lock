@@ -1852,6 +1852,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"embla-carousel-reactive-utils@npm:8.1.6":
+  version: 8.1.6
+  resolution: "embla-carousel-reactive-utils@npm:8.1.6"
+  peerDependencies:
+    embla-carousel: 8.1.6
+  checksum: 10c0/e8e30e24bc3a0ff8a49b3dc724d9d53c75a3061a31ef76535d7be6bca72097ff099f45486f8ae3f3a70145895a99f21c277de01582c8c61669df8edf4560f57f
+  languageName: node
+  linkType: hard
+
+"embla-carousel-vue@npm:^8.1.6":
+  version: 8.1.6
+  resolution: "embla-carousel-vue@npm:8.1.6"
+  dependencies:
+    embla-carousel: "npm:8.1.6"
+    embla-carousel-reactive-utils: "npm:8.1.6"
+  peerDependencies:
+    vue: ^3.2.37
+  checksum: 10c0/e11fc86d114c48e9ddcd8a8d49d61fc3aa64d4c6031fc6bad22a2616ce935fae66aaec03eb70bd28f58bbe8dfe0311fcebfbdf9da4c42f6bb2c24caf02c3c340
+  languageName: node
+  linkType: hard
+
+"embla-carousel@npm:8.1.6":
+  version: 8.1.6
+  resolution: "embla-carousel@npm:8.1.6"
+  checksum: 10c0/a0085b97fa7aeea8c98187b58a25ca9648494afc14c8e41a3322920bd92d54659d04ed0aec0b3a7f60658bf49b22805b0ba76ffc0bae85d8719089f17402fb94
+  languageName: node
+  linkType: hard
+
 "emoji-regex@npm:^8.0.0":
   version: 8.0.0
   resolution: "emoji-regex@npm:8.0.0"
@@ -3130,6 +3158,7 @@ __metadata:
     "@vitejs/plugin-vue": "npm:^5.0.5"
     "@vue/compiler-sfc": "npm:^3.4.31"
     "@vue/server-renderer": "npm:^3.4.31"
+    "@vueuse/core": "npm:^10.11.0"
     autoprefixer: "npm:^10.4.19"
     chokidar: "npm:^3.6.0"
     class-variance-authority: "npm:^0.7.0"
@@ -3138,6 +3167,7 @@ __metadata:
     deepmerge: "npm:^4.3.1"
     effector: "npm:^23.2.2"
     effector-vue: "npm:^23.0.0"
+    embla-carousel-vue: "npm:^8.1.6"
     eslint: "npm:^9.6.0"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-prettier: "npm:^5.1.3"

@@ -15,7 +15,12 @@ export default {
        * ignore html,body {} rule - fixes issue with min-width: 320px
        * ignore scrollbar styles - fixes big scrollbars
        */
-      selectorBlackList: [/^html[^body]+body$/, /^\.container/, /::-webkit-scrollbar/, /:export/],
+      selectorBlackList: [
+        /^html[^body]+body$/,
+        /^\.container/,
+        /::-webkit-scrollbar/,
+        /:export/,
+      ],
       replace: true,
       mediaQuery: false,
       minPixelValue: 1,

@@ -1,18 +1,18 @@
 <template>
   <div data-id="portfolio-item-details">
     <div class="max-w-[900px]">
-      <div class="aspect-h-9 aspect-w-16 rounded-md">
-        <img
-          v-if="fullImage"
-          data-id="image"
-          class="rounded-[inherit] object-cover"
-          :src="fullImage"
-          width="640"
-          height="360"
-          alt=""
-        />
+      <ThumbCarousel v-if="media.length > 1" :items="media" />
+      <img
+        v-else-if="media.length == 1"
+        data-id="image"
+        class="rounded-[inherit] object-cover"
+        :src="media[0].src"
+        width="640"
+        height="360"
+        alt=""
+      />
+      <div v-else class="aspect-h-9 aspect-w-16 rounded-md">
         <div
-          v-else
           data-id="image"
           class="flex flex-col items-center justify-center rounded-[inherit]
             bg-muted"
@@ -45,7 +45,8 @@
 
 <script setup lang="ts">
   import { formatDate } from '@/shared/lib/date';
-  import type { PortfolioItem } from './portfolio.types';
+  import type { PortfolioItem } from './portfolio.types.ts';
+  import ThumbCarousel from './ui/ThumbCarousel.vue';
   import PortfolioItemSkills from './PortfolioItemSkills.vue';
 
   const props = defineProps<PortfolioItem>();

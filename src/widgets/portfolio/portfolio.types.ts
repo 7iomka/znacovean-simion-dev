@@ -5,8 +5,11 @@ export interface PortfolioItem {
   startDate: string;
   endDate: string | null;
   title: string;
-  thubmnail?: string;
-  fullImage?: string;
+  media: {
+    src: string;
+    thumbSrc?: string;
+    alt?: string;
+  }[];
   url?: string;
   excerpt: string;
   description: string;
